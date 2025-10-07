@@ -2,6 +2,9 @@ print("Salut")
 print("Hello, World!")
 print("ceva")
 <<<<<<< HEAD
+print("buna")
+=======
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 print('acum')
 =======
