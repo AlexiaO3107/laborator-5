@@ -34,6 +34,7 @@ print("Adela")
 
 <<<<<<< HEAD
 print('Lorena')
+  dewdasfasedfasdfasdfas
 
 
 print("Georgiana")print("Georgiana")
