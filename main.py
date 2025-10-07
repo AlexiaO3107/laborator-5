@@ -15,6 +15,7 @@ print("Lavi")
 <<<<<<< HEAD
 
 
+
 print("Adela")
 =======
 print('acum')
@@ -26,5 +27,10 @@ print(27**8)
 print("Adela")
 >>>>>>> Stashed changes
 >>>>>>> a899addecb7ccad5ba5ffe2a67784b33841aec73
+<<<<<<< HEAD
 >>>>>>> 8030d72c98f06a2541f95981a9c62e99bc19179b
 >>>>>>> 625411de2cffe03b3f748b155f59dc04815b7e11
+=======
+
+print('Lorena')
+>>>>>>> fb8f67771f5a6edfe4553a553ea845e76d82d38c
