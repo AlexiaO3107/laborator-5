@@ -36,4 +36,6 @@ print("Adela")
 >>>>>>> 625411de2cffe03b3f748b155f59dc04815b7e11
 
 print("hello")
+>>>>>>> fe98c336f31720fe1ed4c5a795673e02911ed4a9
+
 print('lorena')
