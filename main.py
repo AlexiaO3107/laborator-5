@@ -2,6 +2,17 @@ print("Salut")
 print("Hello, World!")
 print("ceva")
 <<<<<<< HEAD
+print("buna")
+=======
+<<<<<<< HEAD
+<<<<<<< Updated upstream
+print('acum')
+=======
+>>>>>>> Stashed changes
+
+print("Lavi")
+=======
+<<<<<<< HEAD
 
 
 print("Adela")
@@ -15,3 +26,4 @@ print(27**8)
 print("Adela")
 >>>>>>> Stashed changes
 >>>>>>> a899addecb7ccad5ba5ffe2a67784b33841aec73
+>>>>>>> 8030d72c98f06a2541f95981a9c62e99bc19179b
