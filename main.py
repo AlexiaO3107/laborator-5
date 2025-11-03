@@ -1,9 +1,14 @@
-if __name__ == '__main__':
-    print("Hello, World!?!")
-    print("Hello, World!?!")
-    print("hi, git!")
-    print("Te pup Miro")
-    print("hi, git!")
-    print("Hello HElloHello HElloHello HElloHello HElloHello HElloHello HElloHello HEllo")
-    print("Opris Claudiu-Daniel -Bunaaaaa")
-    print("test Moraru Mihai Andrei")
+print("hello world")
+print("hi")
+
+print("Szilagyi-Pap David says hi")
+print("cat")
+print("hiii")
+print("hi")
+
+print("salut")
+
+print("modificare Adi Bura")
+
+
+print("stefania")
