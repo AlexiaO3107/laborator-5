@@ -1,19 +1,24 @@
-if __name__ == "__main__":
-      text = "În fiecare zi, tehnologia avansează cu pași uriași, oferindu-ne noi posibilități de învățare, comunicare și dezvoltare personală, dar și provocări legate de responsabilitate și echilibru."
+# Bubble sort
 
-      lungime=len(text)
-      mijloc=lungime//2
-      primaparte=text[:mijloc]
-      adouaparte=text[mijloc:]
-      primaparte=primaparte.upper()
-      primaparte=primaparte.strip()
-      adouaparte_inversata=adouaparte[::-1]
-      adouaparte_inversata = adouaparte_inversata.strip()
-      caractere=[',','.','?','!']
-      sir_fara_caractere=adouaparte_inversata
-      for caracter in caractere:
-           sir_fara_caractere=sir_fara_caractere.replace(caracter,'')
-      if sir_fara_caractere:
-          sir_fara_caractere = sir_fara_caractere[0].upper() + sir_fara_caractere[1:]
-      final=primaparte+ ' ' +sir_fara_caractere
-      print(final)
+lista_de_numere = [64, 34, 25, 12, 22, 11, 90]
+
+# definim o functie bubble_sort
+# parametru: lista
+# luam primul element si il comparam cu urmatorii
+# daca e mai mare, le interschimbam
+# cat timp facem? pana cand nu mai sunt interschimbari
+
+def bubble_sort(lista):
+      n = len(lista)
+      schimbat = True   # avem de facut de schimbari
+      while schimbat:
+            schimbat = False
+            i = 0
+            while i < n-1:
+                  if lista[i] > lista[i+1]:
+                        lista[i], lista[i+1] = lista[i+1], lista[i]     # swap/interschimbare
+                        schimbat = True
+                  i += 1
+      print("Lista sortata este: ", lista)
+
+bubble_sort(lista_de_numere)
