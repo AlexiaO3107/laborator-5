@@ -101,10 +101,13 @@ def rotire_dreapta(lista: List[int], k: int) -> str:
 #12.
 def frecventa_litere(text: str) -> str:
     litere = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    for litere in text:
-        nr = text.count(litere)
-        return(litere, nr)
+    text_de_afisat = ""
+    for litera in litere:
+        nr = text.count(litera)
+        if nr > 0:
+            text_de_afisat += f"({litera}, {nr}) "
     if text == " ":
         return "nu exista caractere"
+    return text_de_afisat
 
 print(frecventa_litere("meow meow meow meow"))
