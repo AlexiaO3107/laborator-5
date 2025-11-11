@@ -6,4 +6,4 @@ def filtreaza_pare(lista):
             print(numar)
             ok=1
     if ok==0:
-        print("Nu exista numere pare")
+        print("Nu exista numere pare.")
