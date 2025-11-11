@@ -7,7 +7,7 @@ def filtreaza_pare(lista):
         if numar%2==0:
             ok=1
     if ok==0:
-        return "nu exista numere pare"
+        return "nu exista numere pare."
     return lista
 
 
