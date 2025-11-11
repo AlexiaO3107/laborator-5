@@ -3,7 +3,7 @@ def filtreaza_pare(lista):
     ok=0
     for numar in lista:
         if numar%2!=0:
-            lista.pop(numar)
+            lista.remove(numar)
         if numar%2==0:
             ok=1
     if ok==0:
