@@ -1,3 +1,12 @@
+#Functie Filtreaza Pare (6)
+def filtreaza_pare(lista):
+    numere_pare = []
+    for numar in lista:
+        if numar % 2 == 0:
+            numere_pare.append(numar)
+        if not numere_pare:
+            return "nu exista numere pare"
+        return numere_pare
 #FUNCTIA 5
 def lista_prime_pana_la(n: int) -> str:
     prime = []
@@ -12,17 +21,18 @@ def lista_prime_pana_la(n: int) -> str:
                 este_prim = False
                 break
 
-        # daca prim
-        if este_prim:
-            prime.append(str(numar))
-
-    if len(prime) == 0:
-        return f"Nu exista numere prime pana la {n}."
+def suma_cifrelor(n: int):
+    s = 0
+    c = n
+    if n == 0:
+        return 0
     else:
-        return f"Numere prime pana la {n}: " + ", ".join(prime)     # daca gol
+        while n!=0:
+            s = s+(n%10)
+            n//=10
+    return f"Suma cifrelor lui {c} este {s}"
 
-
-print(lista_prime_pana_la(20))
+    print (f"Suma cifrelor lui {c} este {s}")
 
 # media poderata (8)
 def medie_ponderata(valori: list[float], ponderi: list[float]):
