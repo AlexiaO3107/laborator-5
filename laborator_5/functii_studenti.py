@@ -17,9 +17,9 @@ def lista_prime_pana_la(n: int) -> str:
             prime.append(str(numar))
 
     if len(prime) == 0:
-        return f"Nu există numere prime până la {n}."
+        return f"Nu există numere prime pana la {n}."
     else:
-        return f"Numere prime până la {n}: " + ", ".join(prime)     # daca gol
+        return f"Numere prime pana la {n}: " + ", ".join(prime)     # daca gol
 
 
 print(lista_prime_pana_la(20))
