@@ -32,3 +32,15 @@ def medie_ponderata(valori: list[float], ponderi: list[float]):
     suma_ponderi = sum(ponderi)
     if suma_ponderi == 0:
         return print("error ponderea este 0")
+
+def cmmmc(a,b):
+    produs = a*b
+    if produs == 0:
+        return "Imposibil"
+    else:
+        while a != b:
+            if a > b:
+                a-=b
+            else
+                b-=a
+        return produs//a
