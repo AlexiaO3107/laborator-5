@@ -1,12 +1,14 @@
 #Functie Filtreaza Pare (6)
 def filtreaza_pare(lista):
+    print(lista)
     numere_pare = []
     for numar in lista:
         if numar % 2 == 0:
             numere_pare.append(numar)
-        if not numere_pare:
-            return "nu exista numere pare"
-        return numere_pare
+    print(numere_pare)
+    if not numere_pare:
+        return "nu exista numere pare"
+    return numere_pare
 #FUNCTIA 5
 def lista_prime_pana_la(n: int) -> str:
     prime = []
@@ -51,28 +53,6 @@ def cmmmc(a,b):
         while a != b:
             if a > b:
                 a-=b
-            else
+            else:
                 b-=a
         return produs//a
-
-def sumacif(n):
-    s = 0
-    c=n
-    if n == 0:
-        return 0
-    else:
-        while n!=0:
-            s = s+(n%10)
-            n//=10
-    print (f"Suma cifrelor lui {c} este {s}")
-sumacif(1234)
-
-#Functie Filtreaza Pare (6)
-def filtreaza_pare(lista):
-    numere_pare = []
-    for numar in lista:
-        if numar % 2 == 0:
-            numere_pare.append(numar)
-        if not numere_pare:
-            return "nu exista numere pare"
-        return numere_pare
