@@ -5,7 +5,7 @@ def filtreaza_pare(lista):
         if numar % 2 == 0:
             numere_pare.append(numar)
         if not numere_pare:
-            return "nu exista numere pare."
+            return "nu exista numere pare"
         return numere_pare
 #FUNCTIA 5
 def lista_prime_pana_la(n: int) -> str:
