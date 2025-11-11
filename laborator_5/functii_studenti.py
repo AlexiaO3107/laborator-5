@@ -7,5 +7,5 @@ def sumacif(n):
         while n!=0:
             s = s+(n%10)
             n//=10
-    print (f"Suma cifrelor lui {c} este {s}")
+    print (f"Suma cifrelor lui {c} este {s}.")
 sumacif(1234)
