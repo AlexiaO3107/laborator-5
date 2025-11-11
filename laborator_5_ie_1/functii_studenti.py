@@ -41,3 +41,14 @@ def numar_divizori(n: int) -> str:
             count += 1
 
     return f"Numărul de divizori ai lui {n} este {count}."
+
+#12.
+def frecventa_litere(text: str) -> str:
+    litere = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+    for litere in text:
+        nr = text.count(litere)
+        return(litere, nr)
+    if text == " ":
+        return "nu exista caractere"
+
+print(frecventa_litere("meow meow meow meow"))
