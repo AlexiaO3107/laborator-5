@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 #16.
 def timp_in_format(secunde: int) -> str:
     if secunde < 0:
@@ -10,7 +9,6 @@ def timp_in_format(secunde: int) -> str:
 
 print(timp_in_format(555))
 print(timp_in_format(-5))
-=======
 
 def produs_scalar(v1: list[float], v2: list[float]) -> str:
     """
@@ -42,7 +40,6 @@ def cmmc(a, b):
 a = 12
 b = 18
 print(f"Cel mai mic multiplu comun al lui {a} și {b} este {cmmc(a, b)}")
->>>>>>> c66a0608550b971401cb989164af585bfe633344
 
 def numar_divizori(n: int) -> str:
     if n <= 0:
