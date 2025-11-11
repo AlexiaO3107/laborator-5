@@ -23,3 +23,13 @@ def sumacif(n):
             n//=10
     print (f"Suma cifrelor lui {c} este {s}")
 sumacif(1234)
+
+# media poderata (8)
+def medie_ponderata(valori: list[float], ponderi: list[float]):
+    if len(lista) != len(ponderi)
+        print("error")
+    suma_produse = sum(valoare * pondere for valoare, ponderi in zip(lista, ponderi))
+    suma_ponderi = sum(ponderi)
+    if suma_ponderi == 0:
+        return print("error ponderea este 0")
+        
