@@ -23,3 +23,12 @@ def lista_prime_pana_la(n: int) -> str:
 
 
 print(lista_prime_pana_la(20))
+
+# media poderata (8)
+def medie_ponderata(valori: list[float], ponderi: list[float]):
+    if len(list) != len(ponderi):
+        print("error")
+    suma_produse = sum(valoare * ponderi for valoare, ponderi in zip(list, ponderi))
+    suma_ponderi = sum(ponderi)
+    if suma_ponderi == 0:
+        return print("error ponderea este 0")
