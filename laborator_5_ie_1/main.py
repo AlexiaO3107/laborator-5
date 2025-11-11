@@ -141,14 +141,14 @@ def ruleaza():
             case "este_isograma":
                 rezultat = fs.este_isograma(raw)
 
-            case "transpusa":
+            case "timp_in_format":
                 # format matrice: "1 2 3;4 5 6;7 8 9"
-                matrice = parse_matrix(raw)
-                rezultat = fs.transpusa(matrice)
+                matrice = int(raw)
+                rezultat = fs.timp_in_format(matrice)
 
-            case "suma_diagonala_principala":
+            case "numere_distincte":
                 matrice = parse_matrix(raw)
-                rezultat = fs.suma_diagonala_principala(matrice)
+                rezultat = fs.numere_distincte(matrice)
 
             case "parola_valida":
                 rezultat = fs.parola_valida(raw)
@@ -170,6 +170,7 @@ def ruleaza():
 
             case _:
                 rezultat = "Funcție necunoscută."
+
 
         label_rezultat.config(text=rezultat)
 
@@ -204,8 +205,8 @@ combo_functii = ttk.Combobox(
         "frecventa_litere",
         "cel_mai_frecvent_cuvant",
         "este_isograma",
-        "transpusa",
-        "suma_diagonala_principala",
+        "numere_distincte",
+        "timp_in_format",
         "parola_valida",
         "in_binar",
         "numar_unic",
