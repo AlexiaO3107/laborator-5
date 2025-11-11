@@ -55,3 +55,35 @@ def numar_unic(lista: List[int]) -> str:
     else:
         return "Eroare: condiția nu este respectată."
 print(numar_unic([1, 2, 3, 2, 1]))
+
+#17
+def parola_valida(parola: str) -> str:
+    """
+    Parola este validă dacă are cel puțin 8 caractere, cel puțin o literă și cel puțin o cifră.
+
+    :param parola: parola introdusa
+    :return: Mesaj corespunzator criteriilor
+    """
+    mesaj = "Parola valida"
+    if len(parola) < 8:
+        mesaj = "Parola invalida (are sub 8 caractere)"
+        return mesaj
+    are_litera = False
+    are_cifra = False
+
+    for caracter in parola:
+        if caracter.isalpha():
+            are_litera = True
+        if caracter.isdigit():
+            are_cifra = True
+
+    if not are_litera and not are_cifra:
+        mesaj = "Parola invalida (trebuie sa contina cel putin o litera si cel putin o cifra)"
+        return mesaj
+    elif not are_litera:
+        mesaj = "Parola invalida (trebuie sa contina cel putin o litera)"
+        return mesaj
+    elif not are_cifra:
+        mesaj = "Parola invalida (trebuie sa contina cel putin o cifra)"
+        return mesaj
+    return mesaj
