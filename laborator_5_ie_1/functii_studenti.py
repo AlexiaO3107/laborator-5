@@ -41,3 +41,17 @@ def numar_divizori(n: int) -> str:
             count += 1
 
     return f"Numărul de divizori ai lui {n} este {count}."
+#Functia 19
+from collections import Counter
+from typing import List
+def numar_unic(lista: List[int]) -> str:
+    if not lista:
+        return "Eroare: lista este goală."
+    frecvente = Counter(lista)
+    o_data = [num for num, cnt in frecvente.items() if cnt == 1]
+    de_doua_ori = [num for num, cnt in frecvente.items() if cnt == 2]
+    if len(o_data) == 1 and len(o_data) + len(de_doua_ori) == len(frecvente):
+        return str(o_data[0])
+    else:
+        return "Eroare: condiția nu este respectată."
+print(numar_unic([1, 2, 3, 2, 1]))
