@@ -1,16 +1,12 @@
 #Functie Filtreaza Pare (6)
 def filtreaza_pare(lista):
-    ok=0
+    numere_pare = []
     for numar in lista:
-        if numar%2!=0:
-            lista.remove(numar)
-        if numar%2==0:
-            ok=1
-    if ok==0:
-        return "nu exista numere pare."
-    return lista
-
-
+        if numar % 2 == 0:
+            numere_pare.append(numar)
+        if not numere_pare:
+            return "nu exista numere pare."
+        return numere_pare
 
 def sumacif(n):
     s = 0
@@ -24,12 +20,3 @@ def sumacif(n):
     print (f"Suma cifrelor lui {c} este {s}")
 sumacif(1234)
 
-# media poderata (8)
-def medie_ponderata(valori: list[float], ponderi: list[float]):
-    if len(lista) != len(ponderi)
-        print("error")
-    suma_produse = sum(valoare * pondere for valoare, ponderi in zip(lista, ponderi))
-    suma_ponderi = sum(ponderi)
-    if suma_ponderi == 0:
-        return print("error ponderea este 0")
-        
