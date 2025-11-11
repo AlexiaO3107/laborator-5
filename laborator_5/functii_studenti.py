@@ -8,14 +8,13 @@ def filtreaza_pare(lista):
     if ok==0:
         print("Nu exista numere pare.")
 
-def sumacif(n):
+def suma_cifrelor(n: int):
     s = 0
-    c=n
+    c = n
     if n == 0:
         return 0
     else:
         while n!=0:
             s = s+(n%10)
             n//=10
-    print (f"Suma cifrelor lui {c} este {s}")
-sumacif(1234)
+    return f"Suma cifrelor lui {c} este {s}."
