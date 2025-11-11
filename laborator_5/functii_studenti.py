@@ -2,8 +2,12 @@
 def filtreaza_pare(lista):
     ok=0
     for numar in lista:
+        if numar%2!=0:
+            lista.pop(numar)
         if numar%2==0:
-            print(numar)
             ok=1
     if ok==0:
-        print("Nu exista numere pare.")
+        return "nu exista numere pare"
+    return lista
+
+
